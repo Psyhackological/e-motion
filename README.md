@@ -7,9 +7,7 @@
    - [predict_sentiment](#predict-sentiment)
 5. [Gradio Interface](#gradio-interface)
 6. [Examples and Tutorials](#examples-and-tutorials)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Contact and Support](#contact-and-support)
+7. [License](#license)
 
 ## Overview
 Placeholder: Brief introduction to the module and its purpose.
@@ -33,11 +31,6 @@ Placeholder: Information about the Gradio interface, its features, and usage.
 ## Examples and Tutorials
 Placeholder: Links to examples and tutorials demonstrating the module's capabilities.
 
-## Contributing
-Placeholder: Guidelines for contributing to the module's development.
-
 ## License
 Placeholder: Information about the licensing of the module.
 
-## Contact and Support
-Placeholder: Contact information for support and queries.
