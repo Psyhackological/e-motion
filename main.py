@@ -59,12 +59,54 @@ def predict_sentiment(text):
     return results
 
 
-# Create Gradio Interface
-iface = gr.Interface(
+# gradio interface theme
+custom_theme = gr.themes.Base(
+    primary_hue="yellow",
+    secondary_hue="cyan",
+    neutral_hue="stone",
+    font=[gr.themes.GoogleFont('DM Mono'), 'ui-sans-serif', 'system-ui', 'sans-serif'],
+    font_mono=[gr.themes.GoogleFont('ui-monospace'), 'ui-monospace', 'Consolas', 'monospace'],
+).set(
+    body_background_fill_dark='repeating-linear-gradient(45deg, *background_fill_primary, *background_fill_primary 10px, *background_fill_secondary 10px, *background_fill_secondary 20px)',
+    body_text_color='*neutral_900',
+    body_text_color_dark='*neutral_200',
+    body_text_size='*text_lg',
+    body_text_color_subdued_dark='*primary_500'
+)
+
+# Gradio interface
+examples=[
+    "I love you.",
+    "Do you wanna go eat something with us?",
+    "Go away!",
+    "Amazing work, I see some improvements to make though.",
+    "Are you out of your mind!?"
+]
+
+inputs = gr.Textbox(
+    placeholder="Input text to verify emotion!",
+    label="🚀 Give it a Go!",
+    info="We are classifying meaning behind your text.",
+    max_lines=16,
+)
+
+outputs = gr.Label(
+    value="💤😴",
+    num_top_classes=3,
+    label="result",
+)
+
+demo = gr.Interface(
     fn=predict_sentiment,
-    inputs="text",
-    outputs="json",
+    title="🙂 e-motion 🙃",
+    # description="Simple program helping to understand what might be the meaning behind some words.",
+    article="Choose some ideas from here.",
+    examples=examples,
+    # description="Description of the page",
+    inputs=inputs,
+    outputs=outputs,
+    theme=custom_theme,
 )
 
 # Launch the interface
-iface.launch(inbrowser=True)
+demo.launch(inbrowser=True)
