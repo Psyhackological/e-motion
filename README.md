@@ -70,6 +70,7 @@ A deep learning framework that supports the loading and execution of the RoBERTa
 ### Prerequisites
 - **Git**: Ensure Git is installed on your machine. For installation instructions, visit [Git Installation Guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 - **Python**: Ensure that Python (version 3.10 or later) is installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
+- **Python-pip**: Install pip, Python's package installer, following the instructions at [pip Installation Guide](https://pip.pypa.io/en/stable/installation/).
 
 ### Using Git Clone and Requirements.txt
 
@@ -83,7 +84,7 @@ A deep learning framework that supports the loading and execution of the RoBERTa
    Before installing dependencies, it's recommended to create a virtual environment named `e-motion`:
    ```bash
    python3 -m venv e-motion
-   source e-motion/bin/activate  # On Windows use `venv\Scripts\activate`
+   source e-motion/bin/activate  # On Windows use `e-motion\Scripts\activate`
    ```
 
 3. **Install Dependencies**:
@@ -94,9 +95,9 @@ A deep learning framework that supports the loading and execution of the RoBERTa
 
 ### Using Poetry
 
-1. **Install pip and pipx**:
-   - Install pip, Python's package installer, by following the instructions on [pip.pypa.io](https://pip.pypa.io/en/stable/installing/).
-   - Install pipx, a tool for installing and running Python applications in isolated environments, using:
+1. **Install pipx**:
+   - First, ensure pip is installed as per the prerequisites.
+   - Then install pipx, a tool for installing and running Python applications in isolated environments, using:
      ```bash
      python3 -m pip install --user pipx
      python3 -m pipx ensurepath
