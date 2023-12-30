@@ -17,23 +17,23 @@
 
 ## :books: Table of Contents
 
-1. [Introduction](#-introduction)
-2. [Features](#-features)
-3. [Dependencies](#-dependencies)
+1. [Introduction](#wave-introduction)
+2. [Features](#art-features)
+3. [Dependencies](#package-dependencies)
    - [gradio](#-gradio)
    - [transformers](#-transformers)
    - [torch](#torch)
    - [numpy](#numpy)
    - [scipy](#scipy)
-4. [Installation](#-installation)
-5. [Usage](#-usage)
-6. [Code Structure](#-code-structure)
+4. [Installation](#floppy_disk-installation)
+5. [Usage](#rocket-usage)
+6. [Code Structure](#file_folder-code-structure)
    - [preprocess](#preprocess)
    - [predict_sentiment](#predict-sentiment)
    - [How Gradio Works](#how-gradio-works)
-7. [ROBERTa model](#-roberta-model)
-8. [Credits](#-credits)
-9. [License](#-license)
+7. [ROBERTa model](#thinking_face-roberta-model)
+8. [Credits](#clap-credits)
+9. [License](#scroll-license)
 
 ## :wave: Introduction
 
