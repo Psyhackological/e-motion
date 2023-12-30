@@ -32,8 +32,8 @@
    - [predict_sentiment](#predict-sentiment)
    - [How Gradio Works](#how-gradio-works)
 7. [ROBERTa model](#roberta-model)
-8. [Credits](#Credits)
-9. [License](
+8. [Credits](#credits)
+9. [License](#License)
 
 ## Introduction
 
@@ -200,3 +200,9 @@ This my humble fellow will do Kamil.
 ## Credits
 
 And this too. :)
+
+## License
+
+This project is licensed under the terms of the [MIT License](LICENSE).
+
+![MIT Image](https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg)
