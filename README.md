@@ -65,4 +65,63 @@ Essential for handling numerical computations and data manipulation. In this pro
 ### [Torch](https://pypi.org/project/torch/)
 A deep learning framework that supports the loading and execution of the RoBERTa model. It is instrumental in managing tensors, which are key components in machine learning models like RoBERTa.
 
-Detailed versions and additional development dependencies are specified in the [`pyproject.toml`](pyprojet.toml) file.
+## Installation
+
+### Prerequisites
+- **Git**: Ensure Git is installed on your machine. For installation instructions, visit [Git Installation Guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+- **Python**: Ensure that Python (version 3.10 or later) is installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
+
+### Using Git Clone and Requirements.txt
+
+1. **Clone the Repository**: 
+   ```bash
+   git clone https://github.com/Psyhackological/e-motion.git
+   cd e-motion
+   ```
+
+2. **Create a Virtual Environment**:
+   Before installing dependencies, it's recommended to create a virtual environment named `e-motion`:
+   ```bash
+   python3 -m venv e-motion
+   source e-motion/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install Dependencies**:
+   With the virtual environment activated, install the necessary libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Using Poetry
+
+1. **Install pip and pipx**:
+   - Install pip, Python's package installer, by following the instructions on [pip.pypa.io](https://pip.pypa.io/en/stable/installing/).
+   - Install pipx, a tool for installing and running Python applications in isolated environments, using:
+     ```bash
+     python3 -m pip install --user pipx
+     python3 -m pipx ensurepath
+     ```
+
+2. **Install Poetry**:
+   Use pipx to install Poetry, a tool for dependency management and packaging in Python:
+   ```bash
+   pipx install poetry
+   ```
+
+3. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Psyhackological/e-motion.git
+   cd e-motion
+   ```
+
+4. **Install Dependencies with Poetry**:
+   Run the following command within the repository directory:
+   ```bash
+   poetry install
+   ```
+
+5. **Run the Application**:
+   Launch the application using:
+   ```bash
+   poetry run python3 main.py
+   ```
