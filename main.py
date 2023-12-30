@@ -65,19 +65,22 @@ theme = gr.themes.Base(
     font_mono=[gr.themes.GoogleFont("Lato"), "ui-monospace", "Consolas", "monospace"],
 ).set(
     body_background_fill_dark="linear-gradient(45deg, rgba(23,19,57,1) 0%, rgba(6,2,13,1) 100%);",
-    body_text_color_subdued="*neutral_300",
+    body_background_fill="linear-gradient(45deg, rgba(184,201,255,1) 0%, rgba(114,52,224,1) 100%);",
+    body_text_color="*primary_900",
+    body_text_color_subdued="*neutral_950",
     body_text_color_subdued_dark="*primary_300",
-    button_secondary_background_fill="*primary_600",
+    button_secondary_background_fill="*primary_300",
     button_secondary_background_fill_dark="*primary_600",
-    button_secondary_background_fill_hover="*primary_400",
+    button_secondary_background_fill_hover="*primary_100",
     button_secondary_background_fill_hover_dark="*primary_400",
+    button_secondary_text_color="*neutral_950",
 )
 
 # Gradio interface
 
 with gr.Blocks(theme=theme, title="🙂 E-motion 🙃") as demo:
     with gr.Row():
-        gr.Image("assets/banners/banner1.gif", height=400)
+        gr.Image("assets/logos/e-motion_logo_15.svg", height=128, show_download_button = False)
     with gr.Row():
         with gr.Column():
             box = gr.Textbox(
@@ -93,13 +96,13 @@ with gr.Blocks(theme=theme, title="🙂 E-motion 🙃") as demo:
                 num_top_classes=3,
                 label="results",
             )
-            
             btn = gr.Button("Classify")
             btn.click(predict_sentiment, inputs=[box], outputs=[outputs])
     gr.Markdown(
-    """
+        """
     Choose some ideas from below and see what it brings you back:
-    """)
+    """
+    )
     gr.Examples(
         [
             "I love you.",
