@@ -37,3 +37,10 @@
 ## Introduction
 
 **e-motion** is a sentiment analysis tool, leveraging the power of AI to interpret emotions from text. This project utilizes the ROBERTa model, specifically the [cardiffnlp/twitter-roberta-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest), to analyze sentiment with high accuracy. This tool is ideal for researchers, developers and people that are not sure what the sentiment of the messages is.
+
+## Features
+
+- **Advanced Sentiment Analysis**: Utilizes the ROBERTa model for precise sentiment prediction, with a special knack for detecting the most subtle 'meh' in a sea of text.
+- **User-Friendly Interface**: Features a Gradio interface for easy interaction.
+- **Gradio Integration for Sharing**: Features a Gradio-based interface, allowing for easy sharing and collaboration.
+- **English Language Support**: Tailored specifically for English text, ensuring focused and effective analysis.
