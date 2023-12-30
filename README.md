@@ -1,6 +1,6 @@
 <div align="center">
 
-# :smile: e-motion :upside_down_face:
+# :slightly_smiling_face: e-motion :upside_down_face:
 
 ![ProjectLogo](assets/e-motion_logo.png)
 
