@@ -17,36 +17,36 @@
 
 ## :books: Table of Contents
 
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Dependencies](#dependencies)
-   - [gradio](#gradio)
-   - [transformers](#transformers)
+1. [Introduction](#-introduction)
+2. [Features](#-features)
+3. [Dependencies](#-dependencies)
+   - [gradio](#-gradio)
+   - [transformers](#-transformers)
    - [torch](#torch)
    - [numpy](#numpy)
    - [scipy](#scipy)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Code Structure](#code-structure)
+4. [Installation](#-installation)
+5. [Usage](#-usage)
+6. [Code Structure](#-code-structure)
    - [preprocess](#preprocess)
    - [predict_sentiment](#predict-sentiment)
    - [How Gradio Works](#how-gradio-works)
-7. [ROBERTa model](#roberta-model)
-8. [Credits](#credits)
-9. [License](#License)
+7. [ROBERTa model](#-roberta-model)
+8. [Credits](#-credits)
+9. [License](#-license)
 
-## Introduction
+## :wave: Introduction
 
 **e-motion** is a sentiment analysis tool, leveraging the power of AI to interpret emotions from text. This project utilizes the ROBERTa model, specifically the [`cardiffnlp/twitter-roberta-base-sentiment-latest`](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest), to analyze sentiment with high accuracy. This tool is ideal for researchers, developers and people that are not sure what the sentiment of the messages is.
 
-## Features
+## :art: Features
 
 - **Advanced Sentiment Analysis**: Utilizes the ROBERTa model for precise sentiment prediction, with a special knack for detecting the most subtle 'meh' in a sea of text.
 - **User-Friendly Interface**: Features a Gradio interface for easy interaction.
 - **Gradio Integration for Sharing**: Features a Gradio-based interface, allowing for easy sharing and collaboration.
 - **English Language Support**: Tailored specifically for English text, ensuring focused and effective analysis.
 
-## Dependencies
+## :package: Dependencies
 
 ### [Python](https://www.python.org/)
 Serves as the foundational programming language, enabling the integration and execution of various libraries necessary for the project.
@@ -66,7 +66,7 @@ Essential for handling numerical computations and data manipulation. In this pro
 ### [Torch](https://pypi.org/project/torch/)
 A deep learning framework that supports the loading and execution of the RoBERTa model. It is instrumental in managing tensors, which are key components in machine learning models like RoBERTa.
 
-## Installation
+## :floppy_disk: Installation
 
 ### Prerequisites
 - **Git**: Ensure Git is installed on your machine. For installation instructions, visit [Git Installation Guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
@@ -122,9 +122,9 @@ A deep learning framework that supports the loading and execution of the RoBERTa
    poetry install
    ```
 
-## Usage
+## :rocket: Usage
 
-This application can be run either directly using Poetry or within a virtual environment. After starting the application by any method, it can typically be accessed at [`http://127.0.0.1:7860`](http://127.0.0.1:7860).
+This application can be run either directly using Poetry or within a virtual environment. After starting the application by any method, it can typically be accessed at [`http://127.0.0.1:7860`](http://127.0.0.1:7860). To close the server use `CTRL + C`.
 
 ### With Poetry
 
@@ -158,9 +158,9 @@ This application can be run either directly using Poetry or within a virtual env
      python3 main.py
      ```
 
-## Code Structure
+## :file_folder: Code Structure
 
-### preprocess
+### [`preprocess`](main.py#L19)
 The `preprocess` function is designed to prepare input text for sentiment analysis by sanitizing user mentions and URLs. This preprocessing step ensures that the sentiment analysis focuses on the text's content rather than extraneous elements like user handles or links.
 
 - **Arguments**:
@@ -168,7 +168,7 @@ The `preprocess` function is designed to prepare input text for sentiment analys
 - **Returns**:
   - `str`: The sanitized text, with user mentions replaced with "@user" and URLs with "http".
 
-### predict_sentiment
+### [`predict_sentiment`](main.py#L37)
 The `predict_sentiment` function leverages the RoBERTa model for sentiment analysis. It first preprocesses the input text, then uses the tokenizer and model to predict sentiment scores, which are converted to probabilities using the softmax function.
 
 - **Arguments**:
@@ -193,16 +193,18 @@ Gradio is used to create an interactive web interface for the sentiment analysis
 - **Launching the Interface**:
   - The interface is launched and made accessible in a web browser using `demo.launch(inbrowser=True)`.
 
-## ROBERTa model
+## :thinking_face: ROBERTa model
 
 This my humble fellow will do Kamil.
 
-## Credits
+## :clap: Credits
 
 And this too. :)
 
-## License
+## :scroll: License
 
 This project is licensed under the terms of the [MIT License](LICENSE).
 
 ![MIT Image](https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg)
+
+Made with :purple_heart: by [34Daniel](https://github.com/34panda),[D3nzer](https://github.com/D3nzer) and [me](https://github.com/Psyhackological).
