@@ -30,9 +30,10 @@
 6. [Code Structure](#code-structure)
    - [preprocess](#preprocess)
    - [predict_sentiment](#predict-sentiment)
+   - [How Gradio Works](#how-gradio-works)
 7. [ROBERTa model](#roberta-model)
 8. [Credits](#Credits)
-9. [License](#license)
+9. [License](
 
 ## Introduction
 
@@ -156,3 +157,38 @@ This application can be run either directly using Poetry or within a virtual env
      ```bash
      python3 main.py
      ```
+
+## Code Structure
+
+### preprocess
+The `preprocess` function is designed to prepare input text for sentiment analysis by sanitizing user mentions and URLs. This preprocessing step ensures that the sentiment analysis focuses on the text's content rather than extraneous elements like user handles or links.
+
+- **Arguments**:
+  - `text (str)`: The text to be preprocessed.
+- **Returns**:
+  - `str`: The sanitized text, with user mentions replaced with "@user" and URLs with "http".
+
+### predict_sentiment
+The `predict_sentiment` function leverages the RoBERTa model for sentiment analysis. It first preprocesses the input text, then uses the tokenizer and model to predict sentiment scores, which are converted to probabilities using the softmax function.
+
+- **Arguments**:
+  - `text (str)`: The text for sentiment analysis.
+- **Returns**:
+  - `dict`: A dictionary mapping sentiment labels to their corresponding scores.
+
+### How Gradio Works
+
+Gradio is used to create an interactive web interface for the sentiment analysis application. It allows users to input text and receive sentiment analysis results in a user-friendly format.
+
+- **Interface Setup**:
+  - The interface is defined within a `gr.Blocks` context, allowing for a customizable layout with components like text boxes, buttons, and labels.
+- **Input and Output Components**:
+  - Users input text into a textbox, and the sentiment analysis results are displayed in a label.
+- **Event Handling**:
+  - The `predict_sentiment` function is linked to a button click, triggering sentiment analysis upon user interaction.
+- **Theming**:
+  - A custom theme is applied to the interface for aesthetic enhancement.
+- **Additional Features**:
+  - The interface includes an image banner, clear button, markdown text for instructions, and predefined example inputs for easy testing.
+- **Launching the Interface**:
+  - The interface is launched and made accessible in a web browser using `demo.launch(inbrowser=True)`.
