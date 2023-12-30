@@ -31,7 +31,7 @@
    - [preprocess](#preprocess)
    - [predict_sentiment](#predict-sentiment)
    - [How Gradio Works](#how-gradio-works)
-7. [ROBERTa model](#thinking_face-roberta-model)
+7. [ROBERTa model](#brain-roberta-model)
 8. [Credits](#clap-credits)
 9. [License](#scroll-license)
 
@@ -193,7 +193,7 @@ Gradio is used to create an interactive web interface for the sentiment analysis
 - **Launching the Interface**:
   - The interface is launched and made accessible in a web browser using `demo.launch(inbrowser=True)`.
 
-## :thinking_face: ROBERTa model
+## :brain: ROBERTa model
 
 This my humble fellow will do Kamil.
 
