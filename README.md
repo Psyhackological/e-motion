@@ -1,16 +1,24 @@
+![Banner](assets/banners/banner1.gif)
+
 ## Table of Contents
-1. [Overview](#overview)
-2. [Installation and Setup](#installation-and-setup)
-3. [Usage](#usage)
-4. [Function Documentation](#function-documentation)
-   - [preprocess](#preprocess)
-   - [predict_sentiment](#predict-sentiment)
-5. [Gradio Interface](#gradio-interface)
-6. [Examples and Tutorials](#examples-and-tutorials)
-7. [License](#license)
+- [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+- [Installation and Setup](#installation-and-setup)
+- [Usage](#usage)
+- [Function Documentation](#function-documentation)
+  - [preprocess](#preprocess)
+  - [predict\_sentiment](#predict_sentiment)
+- [Gradio Interface](#gradio-interface)
+- [Examples and Tutorials](#examples-and-tutorials)
+- [License](#license)
 
 ## Overview
-Placeholder: Brief introduction to the module and its purpose.
+Python script that determines overall emotion of given text.
+
+e.g 
+"I love you" - Positive emotion.
+"I dislike you" - Negative emotion.
+"Are you hungry?" - Use our project and find out!
 
 ## Installation and Setup
 Placeholder: Instructions on how to install and set up the module.
@@ -32,5 +40,8 @@ Placeholder: Information about the Gradio interface, its features, and usage.
 Placeholder: Links to examples and tutorials demonstrating the module's capabilities.
 
 ## License
-Placeholder: Information about the licensing of the module.
+[MIT License
+Copyright (c) 2023 Konrad Konieczny.](/LICENSE)
+
+
 
