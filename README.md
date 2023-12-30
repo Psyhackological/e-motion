@@ -47,7 +47,7 @@
 
 ## Dependencies
 
-### Python (>=3.10, <3.13)
+### [Python](https://www.python.org/)
 Serves as the foundational programming language, enabling the integration and execution of various libraries necessary for the project.
 
 ### [Gradio](https://pypi.org/project/gradio/)
@@ -59,7 +59,7 @@ Provides access to pre-trained models, such as RoBERTa, which is crucial for sen
 ### [SciPy](https://pypi.org/project/SciPy/)
 SciPy, particularly its `softmax` function, is used for converting the model's output scores into probability distributions. This step is vital in interpreting the model's predictions as meaningful probabilities.
 
-### [Numpy](https://pypi.org/project/numpy/)
+### [NumPy](https://pypi.org/project/numpy/)
 Essential for handling numerical computations and data manipulation. In this project, Numpy is used for operations such as sorting the sentiment scores and rounding them off for clearer presentation in the results.
 
 ### [Torch](https://pypi.org/project/torch/)
