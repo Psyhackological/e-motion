@@ -36,7 +36,7 @@
 
 ## Introduction
 
-**e-motion** is a sentiment analysis tool, leveraging the power of AI to interpret emotions from text. This project utilizes the ROBERTa model, specifically the [cardiffnlp/twitter-roberta-base-sentiment-latest](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest), to analyze sentiment with high accuracy. This tool is ideal for researchers, developers and people that are not sure what the sentiment of the messages is.
+**e-motion** is a sentiment analysis tool, leveraging the power of AI to interpret emotions from text. This project utilizes the ROBERTa model, specifically the [`cardiffnlp/twitter-roberta-base-sentiment-latest`](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest), to analyze sentiment with high accuracy. This tool is ideal for researchers, developers and people that are not sure what the sentiment of the messages is.
 
 ## Features
 
@@ -44,3 +44,25 @@
 - **User-Friendly Interface**: Features a Gradio interface for easy interaction.
 - **Gradio Integration for Sharing**: Features a Gradio-based interface, allowing for easy sharing and collaboration.
 - **English Language Support**: Tailored specifically for English text, ensuring focused and effective analysis.
+
+## Dependencies
+
+### Python (>=3.10, <3.13)
+Serves as the foundational programming language, enabling the integration and execution of various libraries necessary for the project.
+
+### [Gradio](https://pypi.org/project/gradio/)
+Utilized to create a user-friendly interface for the sentiment analysis application. It simplifies the process of setting up input and output fields, facilitating the interaction between end-users and the AI model.
+
+### [Transformers](https://pypi.org/project/transformers/)
+Provides access to pre-trained models, such as RoBERTa, which is crucial for sentiment analysis. This library enables the efficient loading and utilization of the [`cardiffnlp/twitter-roberta-base-sentiment-latest`](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) model for analyzing text sentiment.
+
+### [SciPy](https://pypi.org/project/SciPy/)
+SciPy, particularly its `softmax` function, is used for converting the model's output scores into probability distributions. This step is vital in interpreting the model's predictions as meaningful probabilities.
+
+### [Numpy](https://pypi.org/project/numpy/)
+Essential for handling numerical computations and data manipulation. In this project, Numpy is used for operations such as sorting the sentiment scores and rounding them off for clearer presentation in the results.
+
+### [Torch](https://pypi.org/project/torch/)
+A deep learning framework that supports the loading and execution of the RoBERTa model. It is instrumental in managing tensors, which are key components in machine learning models like RoBERTa.
+
+Detailed versions and additional development dependencies are specified in the [`pyproject.toml`](pyprojet.toml) file.
