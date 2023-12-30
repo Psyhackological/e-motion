@@ -1,0 +1,12 @@
+# Main dependencies
+python>=3.10,<3.13
+gradio==4.2.0
+transformers==4.35.0
+scipy==1.11.3
+numpy==1.26.1
+torch==1.12.1
+
+# Development dependencies
+pylint==3.0.2
+isort==5.12.0
+black==23.11.0
