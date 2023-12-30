@@ -121,8 +121,38 @@ A deep learning framework that supports the loading and execution of the RoBERTa
    poetry install
    ```
 
-5. **Run the Application**:
-   Launch the application using:
-   ```bash
-   poetry run python3 main.py
-   ```
+## Usage
+
+This application can be run either directly using Poetry or within a virtual environment. After starting the application by any method, it can typically be accessed at [`http://127.0.0.1:7860`](http://127.0.0.1:7860).
+
+### With Poetry
+
+1. **Standard Run**:
+   - For regular execution without auto-reloading, run:
+     ```bash
+     poetry run python3 main.py
+     ```
+
+2. **With Gradio Auto-Reloading**:
+   - For development with [auto-reloading, using Gradio's feature](https://www.gradio.app/guides/developing-faster-with-reload-mode), run:
+     ```bash
+     poetry run gradio main.py
+     ```
+
+### In a Virtual Environment
+
+1. **Entering the Virtual Environment**:
+   - **Poetry's Virtual Environment**:
+     ```bash
+     poetry shell
+     ```
+   - **Virtual Environment with `requirements.txt`**:
+     ```bash
+     source e-motion/bin/activate  # On Windows use `e-motion\Scripts\activate`
+     ```
+
+2. **Running the Application**:
+   - After entering the virtual environment, run:
+     ```bash
+     python3 main.py
+     ```
