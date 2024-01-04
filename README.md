@@ -1,4 +1,4 @@
-![Banner](assets/banners/banner1.gif)
+![Banner](assets/banners/banner2.gif)
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
