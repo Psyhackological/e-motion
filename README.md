@@ -193,13 +193,56 @@ Gradio is used to create an interactive web interface for the sentiment analysis
 - **Launching the Interface**:
   - The interface is launched and made accessible in a web browser using `demo.launch(inbrowser=True)`.
 
-## :brain: ROBERTa model
+## :brain: RoBERTa model
 
-This my humble fellow will do Kamil.
+e-motion uses the `cardiffnlp/twitter-roberta-base-sentiment-latest` model, renowned for its performance in sentiment analysis tasks. Here some more information about base model - `RoBERTa`:
+
+RoBERTa is like a super smart language program made by Meta in 2020. It's way better than its older version, `BERT` made by Google in 2018, because it learned from a much bigger collection of information.
+
+Here's what makes RoBERTa special:
+
+- **Big Learning Data:** RoBERTa learned from a really, really huge amount of data, much more than BERT. This helps RoBERTa `understand words and sentences better for tricky language tasks`.
+- **Smart Word Guessing:** RoBERTa guesses words in a different way than BERT. `It tries to figure out words that are hidden in a sentence`. This helps it understand how words relate to each other.
+- **Learning from Different Examples:** RoBERTa `learns from lots of different examples by changing words or translating sentences`. This makes it really good at handling different types of language.
+
+RoBERTa shows off its skills in many language jobs:
+
+- **Feeling Detector:** RoBERTa is great at figuring out if a piece of writing is `happy`, `sad`, or just `neutral`. It's better at this than BERT.
+- **Question Answerer:** RoBERTa can quickly answer questions about a piece of writing. It's `faster`and `smarter` at understanding information compared to BERT.
+- **Logic Expert:** RoBERTa can tell if one sentence `logically connects to another`. It's better at this logical stuff than BERT.
+- **Short and Sweet Summarizer:** RoBERTa can make `short and accurate summaries of long pieces of writing`. It's better at picking out the important parts compared to BERT.
+- **Language Translator:** RoBERTa can `smoothly` change words from one language to another, making translations sound `more natural`. It's better at this than BERT.
+
+What data has been used to train RoBERTa? Here are the datasets that we found:
+
+- **BOOK CORPUS and English Wikipedia dataset**: This data also used for training BERT architecture, this data contains `16GB` of text.
+- **CC-NEWS**: This data contains 63 million English news articles crawled between September 2016 and February 2019. The size of this dataset is `76 GB` after filtering.
+- **OPENWEBTEXT**: This dataset contains web content extracted from the URLs shared on Reddit with at least 3 upvotes. The size of this dataset is `38 GB`.
+- **STORIES**: This dataset contains a subset of Common Crawl data filtered to match the story-like style of Winograd NLP task. This dataset contains `31 GB` of text.
+
+Overall, we can see that it was trained with `161 GB of data`. Huuuuge amount!
+
+The tool we're using makes RoBERTa even better by giving it special training on Twitter. This helps RoBERTa:
+
+- **Get Twitter Language Better:** The tool has learned a lot from Twitter, including `slang`, `emojis`, and how people talk casually. This means RoBERTa can understand and respond to Twitter-style language more easily.
+- **Figure Out Feelings in Tweets:** RoBERTa is fine-tuned to `know the emotions` in Tweets, like if they're `happy`, `sad`, or `angry`. This makes it good for tasks like understanding how people feel and what they think.
+- **Find Important Stuff in Tweets:** RoBERTa can do `more than just understand feelings`. It can also find trends, topics people are talking about, and the overall mood of a conversation in Tweets.
+- **Handle Lots of Tweets Fast:** The tool is `built to quickly deal with a bunch of Tweets`. This makes it great for checking what's happening on Twitter in real-time.
+
+**RoBERTa is like a language superhero and we are excited about what else RoBERTa can do in the future – that’s why we gave it a shot!**
 
 ## :clap: Credits
 
-And this too. :)
+For Gradio purposes:
+- [Taking first steps in Gradio](https://www.gradio.app/guides/quickstart)
+- [Gradio Interface documentation](https://www.gradio.app/docs/interface)
+
+For understanding RoBERTA model:
+- [Introduction to RoBERTa](https://www.analyticsvidhya.com/blog/2022/10/a-gentle-introduction-to-roberta/)
+- [Overview of RoBERTa model](https://www.geeksforgeeks.org/overview-of-roberta-model/)
+
+For creating this super fun and pleasent project:
+- [Twitter-roBERTa-base for Sentiment Analysis model from HuggingFace](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest?text=I+can%27t+concentrate+on+anything%2C+and+my+thoughts+are+always+clouded+with+sadness)
 
 ## :scroll: License
 
