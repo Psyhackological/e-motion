@@ -81,12 +81,18 @@ theme = gr.themes.Base(
 
 with gr.Blocks(theme=theme, title="🙂 E-motion 🙃") as demo:
     with gr.Row():
-        gr.Image(
-            "assets/logos/e-motion_logo_17.svg",
-            height=128,
-            show_download_button=False,
-            container=False,
-        )
+        with gr.Column(scale=3):
+            pass
+        with gr.Column(scale=1):
+            gr.Image(
+                "assets/logos/e-motion_logo_17.svg",
+                height=145,
+                show_download_button=False,
+                container=False,
+                interactive=False,
+            ),
+        with gr.Column(scale=3):
+            pass
     with gr.Row():
         with gr.Column():
             box = gr.Textbox(
