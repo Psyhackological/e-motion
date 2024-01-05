@@ -80,19 +80,24 @@ theme = gr.themes.Base(
 
 with gr.Blocks(theme=theme, title="🙂 E-motion 🙃") as demo:
     with gr.Row():
-        gr.Image("assets/logos/e-motion_logo_15.svg", height=128, show_download_button = False)
+        gr.Image(
+            "assets/logos/e-motion_logo_17.svg",
+            height=128,
+            show_download_button=False,
+            container=False,
+        )
     with gr.Row():
         with gr.Column():
             box = gr.Textbox(
-                placeholder="Input text to verify emotion!",
-                label="🚀 Give it a Go!",
+                placeholder="Type something to check sentiment! 🤔 ",
+                label="🚀 Give it a go!",
                 info="We are classifying meaning behind your text.",
-                max_lines=16,
+                max_lines=10,
             )
             gr.ClearButton(box)
         with gr.Column():
             outputs = gr.Label(
-                value="😴 nothing to show yet",
+                value="😴 nothing to show yet...",
                 num_top_classes=3,
                 label="results",
             )
@@ -110,6 +115,10 @@ with gr.Blocks(theme=theme, title="🙂 E-motion 🙃") as demo:
             "Go away!",
             "Amazing work, I see some improvements to make though.",
             "Are you out of your mind!?",
+            "I can't shake off this constant feeling of worry and fear. It's affecting my daily life, and I don't know how to cope.",
+            "I can't help but feel like I'm not good enough. No matter what I do, it feels like I'm always falling short.",
+            "I'm so tired of feeling like this. I just want to feel normal again.",
+            "I feel like I'm going crazy. I can't stop thinking about all the things that could go wrong.",
         ],
         inputs=[box],
     )
