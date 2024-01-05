@@ -6,7 +6,8 @@ cardiffnlp/twitter-roberta-base-sentiment-latest model.
 import gradio as gr
 import numpy as np
 from scipy.special import softmax
-from transformers import AutoConfig, AutoModelForSequenceClassification, AutoTokenizer
+from transformers import (AutoConfig, AutoModelForSequenceClassification,
+                          AutoTokenizer)
 
 # Load tokenizer and model
 MODEL = "cardiffnlp/twitter-roberta-base-sentiment-latest"
