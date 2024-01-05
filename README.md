@@ -124,7 +124,7 @@ A deep learning framework that supports the loading and execution of the RoBERTa
 
 ## :rocket: Usage
 
-This application can be run either directly using Poetry or within a virtual environment. After starting the application by any method, it can typically be accessed at [`http://127.0.0.1:7860`](http://127.0.0.1:7860). To close the server use `CTRL + C`.
+This application can be run either directly using Poetry or within a virtual environment. After starting the application by any method, it can typically be accessed at [`http://127.0.0.1:7860`](http://127.0.0.1:7860/?__theme=dark). To close the server use `CTRL + C`.
 
 ### With Poetry
 
