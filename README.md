@@ -1,8 +1,8 @@
 <div align="center">
 
-# :slightly_smiling_face: e-motion :upside_down_face:
+![e-motion banner2.gif](assets/banners/banner2.gif)
 
-![ProjectLogo](assets/e-motion_logo.png)
+# :slightly_smiling_face: e-motion :upside_down_face:
 
 "Being happy, being sad - with this tool you become sentiment giga chad!"
 
