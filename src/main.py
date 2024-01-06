@@ -1,7 +1,6 @@
 """Main module to run the Gradio interface for sentiment analysis."""
 
-from gradio_interface import setup_interface
+from gradio_interface import demo
 
 if __name__ == "__main__":
-    demo = setup_interface()
     demo.launch(inbrowser=True)
