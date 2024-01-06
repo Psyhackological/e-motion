@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "e-motion"
-version = "0.2.1"
+version = "0.3.0"
 description = "Being happy :) being sad :( with this tool you become sentiment giga chad!"
 authors = ["Konrad Konieczny <konradkon@duck.com>", "Kamil Kotkowski <kamilkotkowski17@gmail.com>", "Daniil Ivzhenko <daniilagimail.pl@gmail.com>"]
 readme = "README.md"

@@ -131,13 +131,13 @@ This application can be run either directly using Poetry or within a virtual env
 1. **Standard Run**:
    - For regular execution without auto-reloading, run:
      ```bash
-     poetry run python3 main.py
+     poetry run python3 src/main.py
      ```
 
 2. **With Gradio Auto-Reloading**:
    - For development with [auto-reloading, using Gradio's feature](https://www.gradio.app/guides/developing-faster-with-reload-mode), run:
      ```bash
-     poetry run gradio main.py
+     poetry run gradio src/gradio_interface.py
      ```
 
 ### In a Virtual Environment
@@ -155,12 +155,12 @@ This application can be run either directly using Poetry or within a virtual env
 2. **Running the Application**:
    - After entering the virtual environment, run:
      ```bash
-     python3 main.py
+     python3 src/main.py
      ```
 
 ## :file_folder: Code Structure
 
-### [`preprocess`](main.py#L19)
+### [`preprocess`](twitter_roberta.py#L11)
 The `preprocess` function is designed to prepare input text for sentiment analysis by sanitizing user mentions and URLs. This preprocessing step ensures that the sentiment analysis focuses on the text's content rather than extraneous elements like user handles or links.
 
 - **Arguments**:
@@ -168,7 +168,7 @@ The `preprocess` function is designed to prepare input text for sentiment analys
 - **Returns**:
   - `str`: The sanitized text, with user mentions replaced with "@user" and URLs with "http".
 
-### [`predict_sentiment`](main.py#L37)
+### [`predict_sentiment`](twitter_roberta.py#L19)
 The `predict_sentiment` function leverages the RoBERTa model for sentiment analysis. It first preprocesses the input text, then uses the tokenizer and model to predict sentiment scores, which are converted to probabilities using the softmax function.
 
 - **Arguments**:
