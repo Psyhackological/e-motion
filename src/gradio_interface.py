@@ -1,7 +1,14 @@
 """Module for setting up the Gradio interface for sentiment analysis."""
+import pathlib
 
 import gradio as gr
 from twitter_roberta import predict_sentiment
+
+# Obtain the directory in which this script is located
+current_directory = pathlib.Path(__file__).parent.resolve()
+
+# Define the path to the image relative to the current script's directory
+image_path = current_directory / "../assets/logos/e-motion_logo_17.svg"
 
 theme = gr.themes.Base(
     primary_hue="indigo",
@@ -31,14 +38,14 @@ theme = gr.themes.Base(
 )
 
 
-"""Set up the Gradio interface for the application."""
+# Set up the Gradio interface for the application.
 with gr.Blocks(theme=theme, title="🙂 E-motion 🙃") as demo:
     with gr.Row():
         with gr.Column(scale=3):
             pass
         with gr.Column(scale=1):
             gr.Image(
-                "../assets/logos/e-motion_logo_17.svg",
+                str(image_path),  # Convert the Path object to a string
                 height=145,
                 show_download_button=False,
                 container=False,
