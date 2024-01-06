@@ -19,6 +19,7 @@ ruff = "^0.1.11"
 
 [tool.ruff.lint]
 select = ["ALL"]
+ignore = ["E501", "INP001", "D203", "D213"]
 
 [build-system]
 requires = ["poetry-core"]

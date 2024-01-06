@@ -1,11 +1,22 @@
-# gradio.py
+"""Module for setting up the Gradio interface for sentiment analysis."""
+
 import gradio as gr
 from twitter_roberta import predict_sentiment
 
 theme = gr.themes.Base(
     primary_hue="indigo",
-    font=[gr.themes.GoogleFont("MD Mono"), "ui-sans-serif", "system-ui", "sans-serif"],
-    font_mono=[gr.themes.GoogleFont("Lato"), "ui-monospace", "Consolas", "monospace"],
+    font=[
+        gr.themes.GoogleFont("MD Mono"),
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif",
+    ],
+    font_mono=[
+        gr.themes.GoogleFont("Lato"),
+        "ui-monospace",
+        "Consolas",
+        "monospace",
+    ],
 ).set(
     body_background_fill_dark="linear-gradient(45deg, rgba(23,19,57,1) 0%, rgba(6,2,13,1) 100%);",
     body_background_fill="linear-gradient(45deg, rgba(184,201,255,1) 0%, rgba(114,52,224,1) 100%);",
@@ -20,8 +31,9 @@ theme = gr.themes.Base(
 )
 
 
-def setup_interface():
-    with gr.Blocks(theme=theme, title="🙂 E-motion 🙃") as demo:
+def setup_interface() -> gr.Blocks:
+    """Set up the Gradio interface for the application."""
+    with gr.Blocks(theme=theme, title="🙂 E-motion 🙃") as interface:
         with gr.Row():
             with gr.Column(scale=3):
                 pass
@@ -38,7 +50,7 @@ def setup_interface():
         with gr.Row():
             with gr.Column():
                 box = gr.Textbox(
-                    placeholder="Type something to check sentiment! 🤔 ",
+                    placeholder="Type something to check sentiment! 🤔",
                     label="🚀 Give it a go!",
                     info="We are classifying meaning behind your text.",
                     max_lines=10,
@@ -51,12 +63,10 @@ def setup_interface():
                     label="results",
                 )
                 btn = gr.Button("Classify")
+                # pylint: disable=no-member
                 btn.click(predict_sentiment, inputs=[box], outputs=[outputs])
-        gr.Markdown(
-            """
-        Choose some ideas from below and see what it brings you back:
-        """,
-        )
+                # pylint: enable=no-member
+        gr.Markdown("Choose some ideas from below and see what it brings you back:")
         gr.Examples(
             [
                 "I love you.",
@@ -71,10 +81,9 @@ def setup_interface():
             ],
             inputs=[box],
         )
-    return demo
+    return interface
 
 
-# For using `gradio gradio_interface.py`
 if __name__ == "__main__":
     demo = setup_interface()
     demo.launch()
