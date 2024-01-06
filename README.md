@@ -160,7 +160,7 @@ This application can be run either directly using Poetry or within a virtual env
 
 ## :file_folder: Code Structure
 
-### [`preprocess`](twitter_roberta.py#L11)
+### [`preprocess`](src/twitter_roberta.py#L14)
 The `preprocess` function is designed to prepare input text for sentiment analysis by sanitizing user mentions and URLs. This preprocessing step ensures that the sentiment analysis focuses on the text's content rather than extraneous elements like user handles or links.
 
 - **Arguments**:
@@ -168,7 +168,7 @@ The `preprocess` function is designed to prepare input text for sentiment analys
 - **Returns**:
   - `str`: The sanitized text, with user mentions replaced with "@user" and URLs with "http".
 
-### [`predict_sentiment`](twitter_roberta.py#L19)
+### [`predict_sentiment`](src/twitter_roberta.py#L24)
 The `predict_sentiment` function leverages the RoBERTa model for sentiment analysis. It first preprocesses the input text, then uses the tokenizer and model to predict sentiment scores, which are converted to probabilities using the softmax function.
 
 - **Arguments**:
