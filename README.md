@@ -1,7 +1,5 @@
 <div align="center">
 
-![e-motion banner2.gif](assets/banners/banner2.gif)
-
 # :slightly_smiling_face: e-motion :upside_down_face:
 
 "Being happy, being sad - with this tool you become sentiment giga chad!"
