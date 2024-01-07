@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
-gradio = "^4.2.0"
+gradio = "4.13.0"
 transformers = "^4.36.2"
 scipy = "^1.11.4"
 numpy = "^1.26.3"
