@@ -10,8 +10,7 @@
 ![PythonVersionRequirement](https://img.shields.io/badge/python-3.10+-blue.svg?style=flat-square&color=171339)
 ![Version](https://img.shields.io/badge/version-0.1.0-blue?style=flat-square&color=171339)
 
-
-![DemoGif](assets/demo.gif)
+![DemoGif](assets/banners/demo.gif)
 
 </div>
 
