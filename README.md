@@ -6,7 +6,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-black.svg?style=flat-square&color=171339)](LICENSE)
 ![PythonVersionRequirement](https://img.shields.io/badge/python-3.10+-blue.svg?style=flat-square&color=171339)
-![Version](https://img.shields.io/badge/version-0.1.0-blue?style=flat-square&color=171339)
+![Version](https://img.shields.io/badge/version-0.3.1-blue?style=flat-square&color=171339)
 
 ![DemoGif](assets/banners/demo.gif)
 
